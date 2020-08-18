@@ -1,0 +1,11 @@
+print("Simple Comparator") #version alpha 0.2.1
+print("This is a comparator which compares the two inputted numbers.")
+firstNum = int(input("\nEnter the first value: -> "))
+secondNum = int(input("Enter the second value: -> "))
+print("\nYou entered "+str(firstNum)+" as the first value, and the "+str(secondNum)+" as the second value.\n")
+print("Is "+(str(firstNum))+" greater than "+str(secondNum)+"?")
+print(str(firstNum >= secondNum))
+print("Is "+str(firstNum)+" less than "+str(secondNum)+"?")
+print(str(firstNum <= secondNum))
+print("Are the two given values, "+str(firstNum)+" and "+str(secondNum)+" equal?")
+print(str(firstNum == secondNum))
