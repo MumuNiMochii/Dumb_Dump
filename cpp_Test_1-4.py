@@ -1,35 +1,18 @@
-# py-integrated guide for C++
+# a py-initiated guide for C++
 
-er = "\tError. Input a valid number from the list."
-oneT = "\t\tTopic 1 - Integers, Operators, and Inline Operators"
-twoT = "\t\tTopic 2 - Math Functions"
-tpNum = [er, oneT, twoT]
+# variables and data types
+msL = ["\n\tINTRODUCTION TO C++", "\t- Welcome to my program! The program's purpose is to shorten 'the lines of code' in Test_1-4.cpp project.", "\tI am hopeful that this program would only take few lines (heck those (in Test_1-4.cpp) are just bunch of strings).", "\n\tHere is the list of few subjects:", "\t\t1. Operators", "\t\t2. Inline Operators", "\t\t3. Math Functions"]
+msE = "\n\tError. Please input a valid positive number."
+msT = ["\n\t\t1. Operators\n\t\t\t- The basic operators which can be used to evaluate integers are: \"+\", \"-\", \"*\", \"/\", and \"%\".\n\t\t\tThe operators except % or \"modulus\" are applicable to all these data types: \"int\", \"float\", and \"double\".\n\n\t\t\tI. Addition (+)\n\t\t\t\tA. int\n\t\t\t\t\tInput: cout << 10 + 2;\n\t\t\t\t\tOutput: 12\n\t\t\t\tB. float\n\t\t\t\t\tInput: cout << 3 + 4.2;\n\t\t\t\t\tOutput: 7.2\n\t\t\t\tC. double\n\t\t\t\t\tInput: cout << 13.89012 + 0.23018;\n\t\t\t\t\tOutput: 14.1203\n\n\t\t\tII. Subtraction (-)\n\t\t\t\tA. int\n\t\t\t\t\tInput: cout << 9 - 18;\n\t\t\t\t\tOutput: -9\n\t\t\t\tB. float\n\t\t\t\t\tInput: cout << 25 - 15.2;\n\t\t\t\t\tOutput: 9.8\n\t\t\t\tC. double\n\t\t\t\t\tInput: cout << 10.00524 - 8.0342;\n\t\t\t\t\tOutput: 1.97104\n\n\t\t\tIII. Multiplication (*)\n\t\t\t\tA. int\n\t\t\t\t\tInput: cout << -4 * 6;\n\t\t\t\t\tOutput: -24\n\t\t\t\tB. float\n\t\t\t\t\tInput: cout << 3.65 * -99.53;\n\t\t\t\t\tOutput: -363.284\n\t\t\t\tC. double\n\t\t\t\t\tInput: cout << 1.99342 * 23.21;\n\t\t\t\t\tOutput: 46.2673\n\n\t\t\tIV. Division (/)\n\t\t\t\tA. int\n\t\t\t\t\tInput: cout << -27 / -3;\n\t\t\t\t\tOutput: 9\n\t\t\t\tB. float\n\t\t\t\t\tInput: cout << 25.0 / 5;\n\t\t\t\t\tOutput: 5.0\n\t\t\t\tC. double\n\t\t\t\t\tInput: cout << 45.23423 / -8.033;\n\t\t\t\t\tOutput: -5.63105\n\n\t\t\tV. Modulus (%)\n\t\t\t\tA. int\n\t\t\t\t\tInput: cout << 10 % 3;\n\t\t\t\t\tOutput: 1\n\t\t\t\tThe modulus operator shows the remainder of the quotient.\n\t\t\t\tIt cannot be applied to float and double.", "\n\t\t2. Inline Operators\n\t\t\t- A stored value in variable can be evaluated by its 'another self' with 'another value'.\n\t\t\tThese are the inline operators: \"+=\", \"-=\", \"*=\", \"/=\", and \"%=\".\n\t\t\tAll of these operators are applicable to varying data types such as \"int\", \"float\", and \"double\".\n\n\t\t\tI. Addition (+=)\n\t\t\t\tA. int\n\t\t\t\t\tInput: int x = 10;\n\t\t\t\t\t       x += 3;\n\t\t\t\t\t       cout << x;\n\t\t\t\t\tOutput: 13\n\t\t\t\tB. float\n\t\t\t\t\tInput: int x = 10.0;\n\t\t\t\t\t       x += 3;\n\t\t\t\t\t       cout << x;\n\t\t\t\t\tOutput: 13\n\t\t\t\tC. double\n\t\t\t\t\tInput: cout << 13.89012 + 0.23018;\n\t\t\t\t\tOutput: 14.1203\n\n\t\t\tII. Subtraction (-)\n\t\t\t\tA. int\n\t\t\t\t\tInput: cout << 9 - 18;\n\t\t\t\t\tOutput: -9\n\t\t\t\tB. float\n\t\t\t\t\tInput: cout << 25 - 15.2;\n\t\t\t\t\tOutput: 9.8\n\t\t\t\tC. double\n\t\t\t\t\tInput: cout << 10.00524 - 8.0342;\n\t\t\t\t\tOutput: 1.97104\n\n\t\t\tIII. Multiplication (*)\n\t\t\t\tA. int\n\t\t\t\t\tInput: cout << -4 * 6;\n\t\t\t\t\tOutput: -24\n\t\t\t\tB. float\n\t\t\t\t\tInput: cout << 3.65 * -99.53;\n\t\t\t\t\tOutput: -363.284\n\t\t\t\tC. double\n\t\t\t\t\tInput: cout << 1.99342 * 23.21;\n\t\t\t\t\tOutput: 46.2673\n\n\t\t\tIV. Division (/)\n\t\t\t\tA. int\n\t\t\t\t\tInput: cout << -27 / -3;\n\t\t\t\t\tOutput: 9\n\t\t\t\tB. float\n\t\t\t\t\tInput: cout << 25.0 / 5;\n\t\t\t\t\tOutput: 5.0\n\t\t\t\tC. double\n\t\t\t\t\tInput: cout << 45.23423 / -8.033;\n\t\t\t\t\tOutput: -5.63105\n\n\t\t\tV. Modulus (%)\n\t\t\t\tA. int\n\t\t\t\t\tInput: cout << 10 % 3;\n\t\t\t\t\tOutput: 1\n\t\t\t\tThe modulus operator shows the remainder of the quotient.\n\t\t\t\tIt cannot be applied to float and double.", "\n\t\t3. Math Functions"]
 
-print("\nINTRODUCTION TO C++\n\tWelcome to my program! In this program some fundamentals of C++ will be tackled.")
-n_tpNum = []
-nL = []
-for x in tpNum:
-    if x != er:     # So apparently this makes this an 'exception'
-        n_tpNum.append(x)
-tpNum = n_tpNum
+for n in msL:
+    print(n)
 
-for y in tpNum:     # I added this to remove the 'list-looking' print
-    print(y)        # It prints in iteration without the 'exception'
-
-num = int(input("\nInput a number to start a topic: "))
-
-if num == 0 or num < 0:
-    print(er)
-elif num == 1 or num == 2 and not num <= 0:
-    for a in range(list.n_tpNum(num), num):
-        if a == oneT:
-            print(a)
-            break
-        elif a == twoT:
-            print(a)
-            break
-    nL = n_tpNum
-    for b in nL:
-        print(b)
+a = 0
+tNum = int(input("\n\tInput the number of the subject you wish to check: -> "))
+if tNum == a:
+    print(msE)
+elif tNum == a+tNum:
+    print(msT[tNum-1])      # I've been thinking about this solution for minutes and I just applied it lolz
 else:
-    print(er)
+    print(msE)
