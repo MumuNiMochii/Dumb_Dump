@@ -13,10 +13,14 @@ where the works there are 'test sites'. That also include the 'CPlusPlus_Basics'
 repository.
 Aside from my legitimate works this includes:
   - modified examples from the Internet
+### Programs EXPERIMENTED WITH:
+  - C++
+  - Java
+  - Python
 ### More Info:
   - cpp_Test_1-4.py is just chad Test_1-4.cpp with lesser lines of code,
   and it obviously needs to be written in same language just to be fair
   (I'm still lazy to do it I'll take a break) - 09/06/2020, 1:24 AM
   - name_recorder.java is as what its name says; I consider this as my first
   'real' Java experience, not one with school smh skskskksk; overall, Java
-  is fun to experiment with too xD
+  is fun to experiment with too xD - 09/12/2020, 9 PM
