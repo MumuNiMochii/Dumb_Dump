@@ -9,20 +9,18 @@ public class Test {
 		System.out.println("What is your name?");
 		
 		System.out.println("Start by inputting your first name:");
-		Scanner fN = new Scanner(System.in);
-		String firstname = fN.nextLine();
+		Scanner scanner = new Scanner(System.in);
+		String firstname = scanner.nextLine();
 		
 		System.out.println("Next, input your middle name:");
-		Scanner mN = new Scanner(System.in);
-		String middlename = mN.next(); //this is the string for middlename; to be used in array to get its initial
+		String middlename = scanner.next(); //this is the string for middlename; to be used in array to get its initial
 		//make a char array to get middlename's initial letter //mnNum stands for middlename's number
 		int mNnum = middlename.length(); //I recalled using .length() in C++ so yeah I added this xD
 		char mInit[] = new char[mNnum]; //so regardless of middlename's length, the array limit will be right
 		middlename.getChars(0, 1, mInit, 0); //data: (starting point, numbers to take, destination 'mInit', where to put inside array)  //just same as .substr() in C++ //also, mInit's 'Init' stands for initial xD
 		
 		System.out.println("Next, input your last name:");
-		Scanner lN = new Scanner(System.in);
-		String lastname = lN.nextLine();
+		String lastname = scanner.nextLine();
 			
 		//message
 		System.out.println(("Hello ")+(firstname)+(" ")+(mInit[0])+(". ")+(lastname)+("!"));
