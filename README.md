@@ -14,6 +14,7 @@ repository.
 Aside from my legitimate works this includes:
   - modified examples from the Internet
 ### What are the programming languages involved?
+  - C
   - C++
   - Java
   - Python
@@ -21,6 +22,8 @@ Aside from my legitimate works this includes:
     - Yeah I know it ain't a pro-lang and is a markup language instead, but hey
     it got scripts and all of that stuff xD
 ### What should I check out?
+  - After a hiatus I'm back! I just reviewed the basics of Python and I learned C as well!
+  Overall, the C seems to be a bridge between Python and C++ xD - 10/07/2020, 9:11 PM
   - I haven't slept a daw since the time, 09/07-08/2020, when I made myBot_beta.py
   QwQ I am going to be a ghost literally
   - name_recorder.java is as what its name says; I consider this as my first
