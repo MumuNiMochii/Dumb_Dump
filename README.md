@@ -21,7 +21,7 @@ Aside from my legitimate works this includes:
   - HTML
     - Yeah I know it ain't a pro-lang and is a markup language instead, but hey
     it got scripts and all of that stuff xD
-### What should I check out?
+### Updates
   - After a hiatus I'm back! I just reviewed the basics of Python and I learned C as well!
   Overall, the C seems to be a bridge between Python and C++ xD - 10/07/2020, 9:11 PM
   - I haven't slept a daw since the time, 09/07-08/2020, when I made myBot_beta.py
