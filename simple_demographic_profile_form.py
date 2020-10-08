@@ -1,3 +1,5 @@
+from prettytable import PrettyTable
+
 print("\nSimple Demographic Profile Form\n\nInput:")
 
 x = str(input("\tEnter your name: "))
@@ -57,9 +59,7 @@ elif not b == str and b == int or b == float:
 else:
     b = b
 
-print("""\nOutput:
-\tName: """+x+"""
-\tAge: """+str(y)+"""
-\tSex: """+z+"""
-\tOccupation: """+a+"""
-\tCitizenship: """+b)
+db = PrettyTable()
+db.field_names = ['Name', 'Age', 'Sex', 'Occupation', 'Citizenship']
+db.add_row([x, y, z, a, b])
+print(db)
