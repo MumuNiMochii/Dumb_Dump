@@ -16,6 +16,9 @@ if y == int:
     y = y
 elif y == str and y + msg1[0] or y + msg1[1] or y + msg1[2] or y + msg1[3] or y + msg1[4] or y + msg1[5]:
     y = y
+elif y == '':
+    print("\n\tError: Empty input.\n")
+    y = 'None - \'no valid input found\''
 else:
     print("\n\tError: Invalid input.\n")
 
@@ -27,6 +30,9 @@ elif z == 'F' or z == 'f' or z == 'Female' or z == 'female':
 elif not z == str and not z == 'M' or z == 'm' or z == 'Male' or z == 'male' or z == 'F' or z == 'f' or z == 'Female' or z == 'female' and z == int or z == float:
     print("\n\tError: Invalid input.\n")
     z = str(z)+" - \'it is not a valid input\'"
+elif z == '':
+    print("\n\tError: Empty input.\n")
+    z = 'None - \'no valid input found\''
 else:
     print("\n\tError: Failed to input right answer.\n")
     z = str(z) + " - \'it is not a valid input\'"
