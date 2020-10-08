@@ -25,11 +25,12 @@ else:
     print("\n\tError: Invalid input.\n")
 
 z = str(input("\tEnter your sex: "))
-if z == 'M' or z == 'm' or z == 'Male' or z == 'male':
+msg2 = ['M', 'm', 'Male', 'male', 'F', 'f', 'Female', 'female']
+if z == msg2[0] or z == msg2[1] or z == msg2[2] or z == msg2[3]:
     z = 'Male'
-elif z == 'F' or z == 'f' or z == 'Female' or z == 'female':
+elif z == msg2[4] or z == msg2[5] or z == msg2[6] or z == msg2[7]:
     z = 'Female'
-elif not z == str and not z == 'M' or z == 'm' or z == 'Male' or z == 'male' or z == 'F' or z == 'f' or z == 'Female' or z == 'female' and z == int or z == float:
+elif not z == str and not z == msg2[0] or z == msg2[1] or z == msg2[2] or z == msg2[3] or z == msg2[4] or z == msg2[5] or z == msg2[6] or z == msg2[7] and z == int or z == float:
     print("\n\tError: Invalid input.\n")
     z = str(z)+" - \'it is not a valid input\'"
 elif z == '':
@@ -62,4 +63,5 @@ else:
 db = PrettyTable()
 db.field_names = ['Name', 'Age', 'Sex', 'Occupation', 'Citizenship']
 db.add_row([x, y, z, a, b])
+print("\n\t")
 print(db)
