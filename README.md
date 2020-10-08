@@ -18,9 +18,10 @@ Aside from my legitimate works this includes:
   - C++
   - Java
   - Python
-  - HTML
-    - Yeah I know it ain't a pro-lang and is a markup language instead, but hey
+  - HTML, CSS, Javascript, PHP
+    - Yeah I know HTML ain't a pro-lang and is a markup language instead, but hey
     it got scripts and all of that stuff xD
+    - Ugh no, JS is my weakness xD
 ### Updates
   - Just made another program with C, specifically the 'comsole.c'; I'm glad I practiced and
   learned recursions! - 10/08/2020, 1:08 PM
