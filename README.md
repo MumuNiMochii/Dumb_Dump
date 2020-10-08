@@ -22,6 +22,8 @@ Aside from my legitimate works this includes:
     - Yeah I know it ain't a pro-lang and is a markup language instead, but hey
     it got scripts and all of that stuff xD
 ### Updates
+  - Just made another program with C, specifically the 'comsole.c'; I'm glad I practiced and
+  learned recursions! - 10/08/2020, 1:08 PM
   - After a hiatus I'm back! I just reviewed the basics of Python and I learned C as well!
   Overall, the C seems to be a bridge between Python and C++ xD - 10/07/2020, 9:11 PM
   - I haven't slept a daw since the time, 09/07-08/2020, when I made myBot_beta.py
