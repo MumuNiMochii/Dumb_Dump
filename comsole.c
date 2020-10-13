@@ -13,13 +13,13 @@ int main()
     float ans = 0;
 
     printf("Comsole: Computer Console for Mathematics by MumuNiMochii v.0.26.beta");
-    printf("\n\n\tMAIN MENU\n\tWhat do you want to execute and evaluate?\n\t1.) Add two addends\n\t2.) Subtract a minuend from its subtrahend\n\t3.) Multiply a multiplicand to its multiplier\n\t4.) Divide a dividend to its divisor\n\t5.) Raise to power a base number\n\t6.) Get the square root of a number\n\n\t0.) Exit");
+    printf("\n\n\tMAIN MENU\n\tWhat do you want to execute and evaluate?\n\t1.) Add two addends\n\t2.) Subtract a minuend from its subtrahend\n\t3.) Multiply a multiplicand to its multiplier\n\t4.) Divide a dividend to its divisor\n\t5.) Raise to power a base number\n\t6.) Get the square root of a number\n\t7.) Compare two numbers\n\t8.) Compare three numbers\n\n\t0.) Exit");
     printf("\n\n\tChoose the number of your option: ");
     scanf("%d", &opt);
 
-    if (opt == 1){
+    if (opt == 1) {
         //make options for the user: to use it again or get redirected back to home [main()]
-        int addBox(){
+        int addBox() {
             printf("\n\n\tCOMPUTING A NUMBER INCREASED WITH ANOTHER ADDEND");
             printf("\n\tEnter your first addend: ");
             scanf("%f", &num);
@@ -48,7 +48,7 @@ int main()
         }
         return addBox();
     }
-    else if (opt == 2){
+    else if (opt == 2) {
         int subBox(){
             printf("\n\n\tCOMPUTING A MINUEND DECREASED WITH ITS SUBTRAHEND");
             printf("\n\tEnter your minuend: ");
@@ -78,7 +78,7 @@ int main()
         }
         return subBox();
     }
-    else if (opt == 3){
+    else if (opt == 3) {
         int mulBox(){
             printf("\n\n\tCOMPUTING A MULTIPLICAND TIMES ITS MULTIPLIER");
             printf("\n\tEnter your multiplicand: ");
@@ -108,7 +108,7 @@ int main()
         }
         return mulBox();
     }
-    else if (opt == 4){
+    else if (opt == 4) {
         int divBox(){
             printf("\n\n\tCOMPUTING A DIVIDEND TO ITS DIVISOR");
             printf("\n\tEnter your dividend: ");
@@ -138,7 +138,7 @@ int main()
         }
         return divBox();
     }
-    else if (opt == 5){
+    else if (opt == 5) {
         int expBox(){
             printf("\n\n\tCOMPUTING A BASE NUMBER RAISED TO POWER");
             printf("\n\tEnter your base number: ");
@@ -168,7 +168,7 @@ int main()
         }
         return expBox();
     }
-    else if (opt == 6){
+    else if (opt == 6) {
         int sqrtBox(){
             printf("\n\n\tCOMPUTING A RADICAL OF A BASE NUMBER");
             printf("\n\tEnter your base number: ");
@@ -195,6 +195,121 @@ int main()
                 }
         }
         return sqrtBox();
+    }
+    else if (opt == 7) {
+        int comp2() {
+            printf("\n\n\tCOMPARING TWO VALUES");
+            printf("\n\tEnter your first number: ");
+            scanf("%f", &num);
+            printf("\tEnter your second number: ");
+            scanf("%f", &anm);
+
+            printf("\n\t\tYour inputted values are %f and %f, where:", num, anm);
+            char msg1[] = "\n\t\t%f is greater than %f.";
+
+            if (num > anm) {
+                printf(msg1, num, anm);
+
+                int comp2Opt = 0;
+                printf("\n\n\tWould you like to compare two values again?\n\t1.) Yes\n\t2.) No");
+                printf("\n\tChoose the number of your option: ");
+                scanf("%d", &comp2Opt);
+
+                    if (comp2Opt == 1){
+                        printf("\n\n\tYou have been redirected to \'COMPARING TWO NUMBERS\'.");
+                        return comp2();
+                    }
+                    else {
+                        printf("\n\n");
+                        return main();
+                    }
+            }
+            else {
+                printf(msg1, anm, num);
+
+                int comp2Opt = 0;
+                printf("\n\n\tWould you like to compare two values again?\n\t1.) Yes\n\t2.) No");
+                printf("\n\tChoose the number of your option: ");
+                scanf("%d", &comp2Opt);
+
+                    if (comp2Opt == 1){
+                        printf("\n\n\tYou have been redirected to \'COMPARING TWO NUMBERS\'.");
+                        return comp2();
+                    }
+                    else {
+                        printf("\n\n");
+                        return main();
+                    }
+            }
+        }
+        return comp2();
+    }
+    else if (opt == 8) {
+        int comp3() {
+            float num3;
+            printf("\n\n\tCOMPARING THREE VALUES");
+            printf("\n\tEnter your first number: ");
+            scanf("%f", &num);
+            printf("\tEnter your second number: ");
+            scanf("%f", &anm);
+            printf("\tEnter your third number: ");
+            scanf("%f", &num3);
+
+            printf("\n\t\tYour inputted values are %f, %f, and %f, where:", num, anm, num3);
+            char msg2[] = "\n\t\t%f is greater than %f and %f.";
+
+            if ((num > anm)&&(num > num3)) {
+                printf(msg2, num, anm, num3);
+
+                int comp3Opt = 0;
+                printf("\n\n\tWould you like to compare two values again?\n\t1.) Yes\n\t2.) No");
+                printf("\n\tChoose the number of your option: ");
+                scanf("%d", &comp3Opt);
+
+                    if (comp3Opt == 1){
+                        printf("\n\n\tYou have been redirected to \'COMPARING THREE NUMBERS\'.");
+                        return comp3();
+                    }
+                    else {
+                        printf("\n\n");
+                        return main();
+                    }
+            }
+            else if ((anm > num)&&(anm > num3)) {
+                printf(msg2, anm, num, num3);
+
+                int comp3Opt = 0;
+                printf("\n\n\tWould you like to compare two values again?\n\t1.) Yes\n\t2.) No");
+                printf("\n\tChoose the number of your option: ");
+                scanf("%d", &comp3Opt);
+                    if (comp3Opt == 1){
+                        printf("\n\n\tYou have been redirected to \'COMPARING THREE NUMBERS\'.");
+                        return comp3();
+                    }
+                    else {
+                        printf("\n\n");
+                        return main();
+                    }
+            }
+            else {
+                printf(msg2, anm, num, num3);
+
+                int comp3Opt = 0;
+                printf("\n\n\tWould you like to compare two values again?\n\t1.) Yes\n\t2.) No");
+                printf("\n\tChoose the number of your option: ");
+                scanf("%d", &comp3Opt);
+
+                    if (comp3Opt == 1){
+                        printf("\n\n\tYou have been redirected to \'COMPARING THREE NUMBERS\'.");
+                        return comp3();
+                    }
+                    else {
+                        printf("\n\n");
+                        return main();
+                    }
+            }
+        }
+        return comp3();
     }
     else if (opt == 0) {
         return 0;
