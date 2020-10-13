@@ -17,6 +17,7 @@ meaning that further updates and notes will be written here.
     it got scripts and all of that stuff xD
     - Ugh no, JS is my weakness xD
 ### Updates
+  - Updated comsole.c and added comsole.py that performs auto-summation up to the value of the inputted number.
   - Just made another program with C, specifically the 'comsole.c'; I'm glad I practiced and
   learned recursions! - 10/08/2020, 1:08 PM
   - After a hiatus I'm back! I just reviewed the basics of Python and I learned C as well!
