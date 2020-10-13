@@ -24,18 +24,12 @@
   (I'm still lazy to do it I'll take a break) - 09/06/2020, 1:24 AM
 ## Questions I QA-ed.
 ### What is 'Dumb_Dump'?
-My own repository of mostly simple and sometimes absurd works and ideas of programs
-written in Python 3.6. Well, originally I had thought of it that way, but now I've decided
-that my other projects written in other languages will be included here.
+Simply, a dump for my dumb programs.
 ### What is 'Dumb_Dump Bulletin Board'?
-This 'Dumb_Dump Bulletin Board' serves as the bulletin board of the repository;
-meaning that further updates and notes will be written here.
+This 'Dumb_Dump Bulletin Board' serves as the bulletin board of the repository.
 ### What are the programming languages involved?
   - C
   - C++
   - Java
   - Python
-  - HTML, CSS, Javascript, PHP
-    - Yeah I know HTML ain't a pro-lang and is a markup language instead, but hey
-    it got scripts and all of that stuff xD
-    - Ugh no, JS is my weakness xD
+  - Web Application (The Markup Guy & PHP)
