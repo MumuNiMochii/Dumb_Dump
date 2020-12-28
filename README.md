@@ -9,6 +9,7 @@
     - [x] square root
     - [x] summation
     - [x] factorial
+    - [x] comparison
   - Updated comsole.c and added comsole.py that performs auto-summation up to the value of the inputted number.
   - Just made another program with C, specifically the 'comsole.c'; I'm glad I practiced and
   learned recursions! - 10/08/2020, 1:08 PM
