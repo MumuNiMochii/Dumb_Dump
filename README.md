@@ -1,5 +1,8 @@
 # Dumb_Dump Bulletin Board
 ## UPDATES
+  - Trying out OpenGL as been yearning for 3D projects from scratch since history
+  - Focused with GDScript for a long time now so I gotta review these stuff again xD
+  - Spacebar sucks, and the version right here isn't even close to the current one, dunno when will update
   - comsole.py contents:
     - [x] addition
     - [x] subtraction
