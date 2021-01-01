@@ -262,7 +262,7 @@ int main()
                 printf(msg2, num, anm, num3);
 
                 int comp3Opt = 0;
-                printf("\n\n\tWould you like to compare three values again?\n\t1.) Yes\n\t2.) No");
+                printf("\n\n\tWould you like to compare two values again?\n\t1.) Yes\n\t2.) No");
                 printf("\n\tChoose the number of your option: ");
                 scanf("%d", &comp3Opt);
 
@@ -279,7 +279,7 @@ int main()
                 printf(msg2, anm, num, num3);
 
                 int comp3Opt = 0;
-                printf("\n\n\tWould you like to compare three values again?\n\t1.) Yes\n\t2.) No");
+                printf("\n\n\tWould you like to compare two values again?\n\t1.) Yes\n\t2.) No");
                 printf("\n\tChoose the number of your option: ");
                 scanf("%d", &comp3Opt);
                     if (comp3Opt == 1){
@@ -292,10 +292,10 @@ int main()
                     }
             }
             else {
-                printf(msg2, num3, anm, num);
+                printf(msg2, num3, num, anm);
 
                 int comp3Opt = 0;
-                printf("\n\n\tWould you like to compare three values again?\n\t1.) Yes\n\t2.) No");
+                printf("\n\n\tWould you like to compare two values again?\n\t1.) Yes\n\t2.) No");
                 printf("\n\tChoose the number of your option: ");
                 scanf("%d", &comp3Opt);
 
@@ -322,4 +322,3 @@ int main()
 
     return 0;
 }
-
